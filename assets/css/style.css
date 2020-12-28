@@ -7,14 +7,15 @@ header {
     text-align: center;
     font-family: 'Didact Gothic';
     font-weight: bold;
-    font-size: 20px;
+    margin:auto;
+    font-size: 30px;
 }
 
 header h2 {
-    font-size:4em;
+    font-size:50px;
 }
 
-section {                               /* section allgemein*/
+section {                               /* Section Allgemein*/
     margin-left: 300px;
     background-size: contain;
     height: 1000px;
@@ -22,11 +23,12 @@ section {                               /* section allgemein*/
     line-height: 10px;
 }
 
-section h1 {                            /*Großes Wort in der mitte*/
+section h1 {                            /*Großes Wort in der Mitte (ORBIS,ROLLR,GAITOS)*/
     font-family:'Didact Gothic';
     font-size: 60px;
     padding-left: 300px;
     color: black;
+    margin: 0;
 }
 
 
@@ -39,7 +41,7 @@ sub h1 {
 
 
 
-section p {                             /*kleine Wörter oben unten*/
+section p {                             /*kleine Wörter oben unten(2019,Corporate Website*/
     font-family:'Work Sans';
     font-size: 20px;
     padding:100px 0px 100px 300px;
@@ -55,7 +57,7 @@ sub p{
 
 
 
-section article {                      /* section Zahl rechts*/
+section h3 {                            /* section Zahl rechts*/
     text-align: right;
     padding-right: 50px;
     font-family: 'Fjalla One';
@@ -63,33 +65,66 @@ section article {                      /* section Zahl rechts*/
     color: #666;
 }
 
-section div {                           /* dive in link */
-    border: 1px solid black;
+a{                                      /* DIVE IN link */
+    border: 1px solid #fff;
+    color: #fff;
     padding: 20px;
     width: 60px;
-    margin-left: 300px;
+    margin:200px 0px 0px 300px;
+    text-decoration: none;
 }
 
-main div {
+
+section div:hover+h3{                   /* HOVER EFFECT für Bg Schwarz*/
+    color:#fff;
+}
+
+a:hover{
+    background-color: #fff;
+    color: black;
+}
+
+span div:hover+h3{                     /* HOVER EFFECT für Bg Weiß*/
+    color: black;
+}
+
+span a:hover{
+    background-color:black;
     color: white;
-    border: 1px solid white;
 }
 
-sub div {
+span div a{
+    border: 1px solid black;
+    color:black;
+}
+
+aside div:hover+h3{              
+    color: black;
+}
+
+aside a:hover{
+    background-color:black;
     color: white;
-    border: 1px solid white;
 }
 
-div:hover{
-    background-color: white;
+aside div a{
+    border: 1px solid black;
+    color:black;
 }
+
 
 
 /*hintergrundbilder*/
+
 main > section { 
+    background:rgba(0,0,0,.8);
+    background-blend-mode:multiply;
+    color: #333;
     background-image:url(../img/handspic2.jpg);
-    background-repeat: no-repeat;
-   
+    background-repeat: cover no-repeat;
+    background-size: contain;
+    
+
 }
 
 span > section {
@@ -139,10 +174,11 @@ footer p{
     font-size: 3em;
 }
 
-footer article{
+article{
     text-align: center;
     font-family: 'Didact Gothic';
     font-size: 5em;
     margin-top:200px;
     line-height: 300x;
-    }
+    color:black;
+}
